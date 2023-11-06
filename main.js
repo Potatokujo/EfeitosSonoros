@@ -9,6 +9,6 @@ let contador = 0;
 //white = "enquanto" basicamente repetição
 while(contador<9){
     
-    listaDeTeclas[0].onclick
+    listaDeTeclas[0].onclick = tocaSomAplausos;
     contador = 1;
 }
