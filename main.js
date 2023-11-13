@@ -1,14 +1,13 @@
-function tocaSomAplausos(){
-    document.querySelector("#som_tecla_aplausos").play();
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
-listaDeTeclas[2].onclick= tocaSomAplausos
 
 let contador = 0;
 //white = "enquanto" basicamente repetição
-while(contador<9){
+while(contador<listaDeTeclas.length){
     
-    listaDeTeclas[0].onclick = tocaSomAplausos;
-    contador = 1;
+    listaDeTeclas[contador].onclick = tocaSomAplausos;
+    contador = contador + 1;
 }
